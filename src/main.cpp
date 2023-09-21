@@ -9,15 +9,16 @@ void setup()
 {
   // put your setup code here, to run once:
   int result = myFunction(2, 3);
-  serial.begin(115200);
+
+  Serial.begin(115200);
 }
 
 void loop()
-
 {
   // put your main code here, to run repeatedly:
-  serial.println("hello");
-  delay(5000);
+  Serial.println("hello world");
+  M5.Lcd.println("hello world");
+  delay(10000);
 }
 
 // put function definitions here:
